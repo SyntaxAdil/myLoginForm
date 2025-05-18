@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
 }
 body{
     display: flex;
@@ -45,7 +46,11 @@ input:focus{
     text-decoration: none;
     color: black;
     font-size: 15px;
+    color:rgba(0,0,0,0.6);
     
+}
+#forgetPass a:hover{
+    color: black;
 }
 button{
     width: 100%;
@@ -84,14 +89,15 @@ p{
     display: flex;
     align-items: center;
     font-weight: bolder;
+    color:rgba(0,0,0,0.8);
 }
 .or_container::before,
 .or_container::after{
     content: "";
+    background-color:rgba(0,0,0,0.4);
     flex: 1;
     margin: 0 6px;
     height: 2px;
-    background-color: black;
     border-radius: 5px;
 
 }
